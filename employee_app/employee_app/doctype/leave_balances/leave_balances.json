@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LB.###",
+ "creation": "2025-09-10 11:10:50.329412",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "total_leaves",
+  "leaves_taken",
+  "leave_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "employee",
+   "options": "Employee Records"
+  },
+  {
+   "fieldname": "total_leaves",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "total_leaves"
+  },
+  {
+   "fieldname": "leaves_taken",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "leaves_taken"
+  },
+  {
+   "fieldname": "leave_balance",
+   "fieldtype": "Int",
+   "in_standard_filter": 1,
+   "label": "leave_balance"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-11 12:19:48.060856",
+ "modified_by": "Administrator",
+ "module": "employee app",
+ "name": "Leave Balances",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

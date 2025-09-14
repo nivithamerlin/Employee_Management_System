@@ -241,4 +241,11 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
+scheduler_events = {
+    "daily": [
+        "employee_app.employee_app.api.leave_reminders.send_pending_leave_reminders"
+    ],
+    "weekly": [
+        "employee_app.employee_app.api.leave_reminders.send_weekly_pending_summary"
+    ]
+}
